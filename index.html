@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Basic Form</title>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <form action="/url-that-handles-form" method="post">
+        <fieldset>
+            <legend>Add user</legend>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="lastNameUser">
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastNameUser">
+            </div>
+            <div>
+                <label for="emailAddress">email address</label>
+                <input type="email" id="emailAddress" name="emailAddressUser">
+            </div>
+            <div>
+                <label>Status</label>
+                <select id="status" name="statusOfUser">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+
+            <fieldset>
+                <legend>Favorite Programming Language</legend>
+                <p>Choose your favoriate programming language:</p>
+                <div>
+                    <input type="radio" id="htmlInput" name="programmingLanguage" value="html">
+                    <label for="htmlInput">HTML</label>
+                </div>
+                <div>
+                    <input type="radio" id="cssInput" name="programmingLanguage" value="css">
+                    <label for="cssInput">CSS</label>
+                </div>
+                <div>
+                    <input type="radio" id="javaScript" name="programmingLanguage" value="javascript">
+                    <label for="javaScript">javaScript</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label>
+                    Add additional comments here:
+                </label>
+                <textarea id="comments" name="commentsTextArea" rows="5" cols="33"></textarea>
+            </div>
+
+            <div>
+                <label for="userDate">Current date</label>
+                <input type="date" id="userDate" name="date-current" min="1900-01-01" max="20">
+            </div>
+
+            <fieldset>
+                <legend>Sign up for newsletter:</legend>
+
+                <div>
+                    <label for="newsletter">Sign up for newsletter</label>
+                    <input type="checkbox" id="newsletter" name="SignForNewsLetter">
+
+                </div>
+
+                <div>
+                    <label for="termsAndConditions">Agree to terms and conditions</label>
+                    <input type="checkbox" id="termsAndConditions" name="TermsAndConditions">
+                </div>
+            </fieldset>
+
+            <button class="favorite styled" type="submit">
+                Submit
+            </button>
+
+            <script>
+                getCurrentDate()
+            </script>
+        </fieldset>
+    </form>
+
+</body>
+
+
+</html>
