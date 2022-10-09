@@ -1,4 +1,4 @@
 # basic-survey-form
 
 Basic survey form for the students and faculty
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Picture of the example](https://github.com/bernales/form-html-example/blob/main/portfolio-image.png?raw=true)
